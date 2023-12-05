@@ -1,0 +1,117 @@
+[
+  {
+    "name": "Clear",
+    "value": [
+      ""
+    ]
+  },
+  {
+    "name": "Only show Owned",
+    "value": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "name": "Curriculum",
+    "value": [
+      "Rhythm",
+      "Chord Progressions",
+      "Comping",
+      "Strumming",
+      "Licks",
+      "Improvisation",
+      "Scales",
+      "Double Stops",
+      "Jamming",
+      "Picking",
+      "Pentatonic",
+      "Blues Scales",
+      "Phrasing",
+      "Left-Hand Techniques",
+      "Right-Hand Techniques",
+      "Bending",
+      "Arrangement",
+      "Chord Substitution",
+      "Legato",
+      "Chords",
+      "Applied Theory",
+      "Finger Picking",
+      "Solo Guitar",
+      "Songs",
+      "Style Studies",
+      "Techniques",
+      "Bass Lines",
+      "Soloing",
+      "Chord Tone",
+      "Vibrato",
+      "Hammer-Ons",
+      "Riffs",
+      "Fills",
+      "Groove",
+      "Arpeggios",
+      "Performance",
+      "Songwriting",
+      "Percussive Technique",
+      "Arranging",
+      "Melody",
+      "Harmony",
+      "Accompaniment",
+      "Les Paul",
+      "Multi-tracking",
+      "Overdubbing",
+      "Singer-Songwriter",
+      "Jazz Scales"
+    ]
+  },
+  {
+    "name": "Skill",
+    "value": [
+      "Beginner",
+      "Intermediate",
+      "Late Intermediate",
+      "Advanced"
+    ]
+  },
+  {
+    "name": "Style",
+    "value": [
+      "Blues",
+      "Multi-Style",
+      "Blues-Rock",
+      "Jazz",
+      "Country",
+      "Acoustic Blues",
+      "Fingerstyle",
+      "Latin",
+      "World",
+      "R&B",
+      "Rock",
+      "Country",
+      "Songwriting",
+      "Pop",
+      "Singer-Songwriter"
+    ]
+  },
+  {
+    "name": "Educator",
+    "value": [
+      "TrueFire",
+      "Mike Zito",
+      "Corey Congilio",
+      "Frank Vignola",
+      "Jeff McErlain",
+      "Brad Carlton",
+      "Diego Figueiredo",
+      "Stu Hamm",
+      "Matt Schofield",
+      "Jay-P",
+      "Tommy Emmanuel",
+      "Jason Loughlin",
+      "Tim Lerch",
+      "Tim Pierce",
+      "Jimmy  Vivino",
+      "Tom Dempsey"
+    ]
+  }
+]
