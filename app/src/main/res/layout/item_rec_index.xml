@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:ignore="HardcodedText">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:backgroundTint="@android:color/transparent"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="false">
+
+        <ImageView
+            android:id="@+id/item_rec_view_all_img_poster"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Image"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/item_rec_view_all_tv_label"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:gravity="start|center_vertical"
+        android:includeFontPadding="true"
+        android:lineSpacingMultiplier="0.9"
+        android:paddingVertical="2dp"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/item_rec_view_all_tv_dec"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:gravity="start|center_vertical"
+        android:includeFontPadding="true"
+        android:lineSpacingMultiplier="0.9"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+</LinearLayout>

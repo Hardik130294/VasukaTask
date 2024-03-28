@@ -1,0 +1,60 @@
+package com.hardik.challengearraylistfilter.presentation.model
+
+import com.hardik.challengearraylistfilter.data.remote.dto.Index
+
+data class FilterList(
+    val filterName: List<String> = listOf(
+        "Styles",
+        "Skills",
+        "Series",
+        "Curriculums",
+        "Educator",
+        "Owned"
+    ),
+    val styleTags: List<String> = listOf(),
+    val skillTags: List<String> = listOf(),
+    val seriesTags: List<String> = listOf(),
+    val curriculumTags: List<String> = listOf(),
+    val educator: List<String> = listOf(),
+    val owned: List<String> = listOf(),
+)
+
+data class FilterModel(
+    val styleTags: Set<String> = emptySet(),
+    val skillTags: Set<String> = emptySet(),
+    val seriesTags: Set<String> = emptySet(),
+    val curriculumTags: Set<String> = emptySet(),
+    val educator: Set<Char> = emptySet(),
+    val owned: Set<String> = emptySet(),
+)
+
+fun getUniqueValues(indexList: List<Index>): FilterList {
+    val styleTags = indexList.flatMap { it.styleTags }.toSet()
+    val skillTags = indexList.flatMap { it.skillTags }.toSet()
+    val seriesTags = indexList.flatMap { it.seriesTags }.toSet()
+    val curriculumTags = indexList.flatMap { it.curriculumTags }.toSet()
+    val educator = indexList.flatMap { it.educator.toList() }.toSet()
+    val owned = indexList.flatMap { it.owned.toString().toList() }.toSet()
+
+    return convertToFilterList(
+        FilterModel(
+            styleTags,
+            skillTags,
+            seriesTags,
+            curriculumTags,
+            educator,
+            owned
+        )
+    )
+}
+
+private fun convertToFilterList(filterModel: FilterModel): FilterList {
+    return FilterList(
+        styleTags = filterModel.styleTags.toList(),
+        skillTags = filterModel.skillTags.toList(),
+        seriesTags = filterModel.seriesTags.toList(),
+        curriculumTags = filterModel.curriculumTags.toList(),
+        educator = filterModel.educator.toList(),
+        owned = filterModel.owned.toList(),
+    )
+}
